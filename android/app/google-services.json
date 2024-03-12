@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "957049728926",
+    "project_id": "skynet-cleaner",
+    "storage_bucket": "skynet-cleaner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957049728926:android:6984a0c89313af87adb08f",
+        "android_client_info": {
+          "package_name": "com.appclear.clean"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957049728926-71lsoqr80gue20glafso3d3avgr95tfl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBCu2cw8sdNnVCm5Q6lN4Uv-_WVSc3a0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957049728926-71lsoqr80gue20glafso3d3avgr95tfl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

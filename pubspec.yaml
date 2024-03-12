@@ -1,0 +1,99 @@
+name: phone_cleaner
+description: A new Flutter project.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+version: 1.0.0
+
+environment:
+  sdk: ">=2.18.0 <4.0.0"
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  flutter_riverpod: ^2.3.2
+  riverpod_annotation: ^2.0.2
+  json_annotation: ^4.7.0
+  flutter_svg: ^2.0.2
+  freezed_annotation: ^2.2.0
+  device_info:
+    path: packages/device_info
+  app_settings:
+    path: packages/app_settings
+  monetization:
+    path: packages/monetization
+  meta: ^1.8.0
+  go_router: ^6.2.0
+  permission_handler: ^10.2.0
+  logger: ^1.1.0
+  path_provider: ^2.0.11
+  lottie: ^2.1.0
+  diacritic: ^0.1.3
+  intl: ^0.18.0
+  sliver_tools: ^0.2.9
+  collection: ^1.17.0
+  photo_view: ^0.14.0
+  share_plus: ^6.3.1
+  delayed_tween_animation_builder: ^0.5.1
+  device_info_plus: ^8.1.0
+  path: ^1.8.2
+  device_apps: ^2.2.0
+  flutter_local_notifications: ^13.0.0
+  workmanager: ^0.5.1
+  shared_preferences: ^2.0.20 
+  open_filex: ^4.3.2
+  duration: ^3.0.12
+  get_it: ^7.2.0
+  notification_permissions: ^0.6.1
+  syncfusion_flutter_charts: ^21.1.41
+  
+  # firebase
+  firebase_analytics: ^10.2.0
+  firebase_core: ^2.9.0
+  firebase_crashlytics: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.3.3
+  riverpod_generator: ^2.1.4
+  flutter_lints: ^2.0.0
+  json_serializable: ^6.3.1
+  freezed: ^2.2.1
+  flutter_launcher_icons: ^0.13.1
+
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Inter
+      fonts:     
+        - asset: fonts/Inter-Regular.ttf
+          weight: 400    
+        - asset: fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Inter-Bold.ttf
+          weight: 700
+       
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lotties/
+    - assets/icons/ic_primary_button/
+    - assets/icons/file/
+    - assets/icons/ic_apps/
+    - assets/icons/ic_nav_bar/
+    - assets/icons/quick_clean/
+    - assets/icons/media_folder/
+    
+  #   - images/a_dot_ham.jpeg
+
+analyzer:
+  excute:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  error:
+    invalid_annotation_target: ignore
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  image_path: "assets/icons/ic_apps/app_icon.png"

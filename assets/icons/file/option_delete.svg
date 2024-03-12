@@ -1,0 +1,30 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="paint0_linear_503_16794" x1="16.1041" y1="8.46325" x2="15.9234" y2="6.76857" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F43B2E"/>
+<stop offset="1" stop-color="#FF5A7B"/>
+</linearGradient>
+<linearGradient id="paint1_linear_503_16794" x1="15.1589" y1="16.2273" x2="5.65008" y2="10.8915" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F43B2E"/>
+<stop offset="1" stop-color="#FF5A7B"/>
+</linearGradient>
+<linearGradient id="paint2_linear_503_16794" x1="14.0135" y1="14.2178" x2="12.6953" y2="13.9468" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F43B2E"/>
+<stop offset="1" stop-color="#FF5A7B"/>
+</linearGradient>
+<linearGradient id="paint3_linear_503_16794" x1="11.4125" y1="14.2178" x2="10.0942" y2="13.9468" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F43B2E"/>
+<stop offset="1" stop-color="#FF5A7B"/>
+</linearGradient>
+<clipPath id="clip0_503_16794">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+<g clip-path="url(#clip0_503_16794)">
+<circle cx="12" cy="12" r="12" fill="#F73C46" fill-opacity="0.2"/>
+<path d="M5.99951 7.59961H7.29951H17.6995" stroke="url(#paint0_linear_503_16794)" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.2498 7.6V6.3C9.2498 5.95522 9.38677 5.62456 9.63057 5.38076C9.87436 5.13696 10.205 5 10.5498 5H13.1498C13.4946 5 13.8252 5.13696 14.069 5.38076C14.3128 5.62456 14.4498 5.95522 14.4498 6.3V7.6M16.3998 7.6V16.7C16.3998 17.0448 16.2628 17.3754 16.019 17.6192C15.7752 17.863 15.4446 18 15.0998 18H8.5998C8.25502 18 7.92436 17.863 7.68057 17.6192C7.43677 17.3754 7.2998 17.0448 7.2998 16.7V7.6H16.3998Z" stroke="url(#paint1_linear_503_16794)" stroke-width="1.125" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13.1499 10.8496V14.7496" stroke="url(#paint2_linear_503_16794)" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.5488 10.8496V14.7496" stroke="url(#paint3_linear_503_16794)" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

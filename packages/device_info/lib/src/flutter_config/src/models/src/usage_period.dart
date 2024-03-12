@@ -1,0 +1,4 @@
+enum UsagePeriod {
+  day,
+  week,
+}

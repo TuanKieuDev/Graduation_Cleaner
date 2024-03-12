@@ -1,0 +1,89 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Cleaner",
+            "request": "launch",
+            "type": "dart",
+            "outputCapture": "std",
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "Cleaner (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile",
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "Cleaner (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release",
+            "program": "lib/main.dart"
+        },
+        {
+            "name": "app_settings",
+            "cwd": "packages/app_settings",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "app_settings (profile mode)",
+            "cwd": "packages/app_settings",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "app_settings (release mode)",
+            "cwd": "packages/app_settings",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "cleaner_app_info",
+            "cwd": "packages/cleaner_app_info",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "cleaner_app_info (profile mode)",
+            "cwd": "packages/cleaner_app_info",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "cleaner_app_info (release mode)",
+            "cwd": "packages/cleaner_app_info",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "example",
+            "cwd": "packages/cleaner_app_info/example",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "example (profile mode)",
+            "cwd": "packages/cleaner_app_info/example",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "example (release mode)",
+            "cwd": "packages/cleaner_app_info/example",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
