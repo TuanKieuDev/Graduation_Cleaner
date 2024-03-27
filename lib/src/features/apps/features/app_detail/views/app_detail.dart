@@ -377,9 +377,9 @@ class _AppDetail extends ConsumerWidget {
                             data: appData[index],
                             padding: const EdgeInsets.symmetric(vertical: 12),
                           ),
-                          const NativeAd(
-                            padding: EdgeInsets.symmetric(vertical: 12),
-                          ),
+                          // const NativeAd(
+                          //   padding: EdgeInsets.symmetric(vertical: 12),
+                          // ),
                           _DrainImpact(
                             data: appData[index],
                             padding: const EdgeInsets.symmetric(vertical: 12),

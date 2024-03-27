@@ -1,8 +1,6 @@
 import 'package:phone_cleaner/di/injector.dart';
 import 'package:phone_cleaner/services/preference_services/shared_preferences_manager.dart';
-import 'package:phone_cleaner/src/commons/commons.dart';
 import 'package:flutter/material.dart';
-import 'package:monetization/monetization.dart';
 
 import '../../../introduction/views/intro_page.dart';
 import '../src.dart';
@@ -33,7 +31,6 @@ class _SplashPageState extends State<SplashPage> {
         firstTime = true;
       });
 
-      AdManager.instance.preventAdFor(newUserAdDelayDuration);
     } else {
       setState(() {
         firstTime = false;

@@ -113,13 +113,13 @@ class _ListFilePageState extends ConsumerState<FileFilterPage> {
       body: Column(
         children: const [
           _Header(),
-          NativeAd(
-            size: NativeAdSize.small,
-            padding: EdgeInsets.symmetric(
-              vertical: 8,
-              horizontal: pageHorizontalPadding,
-            ),
-          ),
+          // NativeAd(
+          //   size: NativeAdSize.small,
+          //   padding: EdgeInsets.symmetric(
+          //     vertical: 8,
+          //     horizontal: pageHorizontalPadding,
+          //   ),
+          // ),
           _ItemNumber(),
           Expanded(child: _MediaDisplayPart())
         ],

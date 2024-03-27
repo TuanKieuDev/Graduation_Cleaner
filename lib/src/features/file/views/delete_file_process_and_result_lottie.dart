@@ -20,7 +20,7 @@ class DeleteFileProcessAndResultLottie extends ConsumerStatefulWidget {
 
 class _DeleteFileProcessAndResultPageState
     extends ConsumerState<DeleteFileProcessAndResultLottie>
-    with SingleTickerProviderStateMixin, InterOnDisposalMixin {
+    with SingleTickerProviderStateMixin {
   static const _processingLoopDuration = 454 / 575;
 
   bool _loopingAnimationFinished = false;

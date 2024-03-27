@@ -130,12 +130,6 @@ class _BoostResultState extends ConsumerState<BoostResult> {
                 fit: BoxFit.cover,
                 repeat: false,
               ),
-            const Positioned(
-              bottom: 0,
-              left: pageHorizontalPadding,
-              right: pageHorizontalPadding,
-              child: NativeAd(),
-            ),
             const SecondaryAppBar(
               title: "Result",
             ),

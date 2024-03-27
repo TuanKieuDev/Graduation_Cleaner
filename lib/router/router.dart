@@ -4,7 +4,6 @@ import 'package:phone_cleaner/router/app_observers.dart';
 import 'package:phone_cleaner/services/firebase_analytic/firebase_analytic_service.dart';
 import 'package:phone_cleaner/src/commons/pages/detail_page.dart';
 import 'package:phone_cleaner/src/commons/widgets/result_detail.dart';
-import 'package:phone_cleaner/src/features/ads/ads_route_pop_observer.dart';
 import 'package:phone_cleaner/src/features/file/features/filter/views/file_filter_page.dart';
 import 'package:phone_cleaner/src/features/file/features/photo_optimizer/views/photo_optimizer_detail.dart';
 import 'package:phone_cleaner/src/features/file/features/photo_optimizer/views/preview_photo_page.dart';
@@ -56,8 +55,7 @@ class AppRouter {
     navigatorKey: navigatorKey,
     observers: [
       injector.get<FirebaseAnalyticService>().getAnalyticsObserver(),
-      AppObservers(),
-      AdsRoutePopObserver()
+      AppObservers()
     ],
     routes: [
       GoRoute(

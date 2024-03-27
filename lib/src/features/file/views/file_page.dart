@@ -154,12 +154,12 @@ class _MainContent extends StatelessWidget {
             children: const [
               PhotoAnalysis(padding: EdgeInsets.only(bottom: 12)),
               PhotoOptimizedPart(padding: EdgeInsets.symmetric(vertical: 12)),
-              Align(
-                alignment: Alignment.center,
-                child: NativeAd(
-                  padding: EdgeInsets.symmetric(vertical: 12),
-                ),
-              ),
+              // Align(
+              //   alignment: Alignment.center,
+              //   child: NativeAd(
+              //     padding: EdgeInsets.symmetric(vertical: 12),
+              //   ),
+              // ),
               MediaFolderPart(padding: EdgeInsets.symmetric(vertical: 12)),
               LargeVideoPart(),
             ],

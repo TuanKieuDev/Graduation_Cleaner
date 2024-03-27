@@ -45,13 +45,6 @@ class _QuickCleanProcessAndResultPageState
         _loopingAnimationFinished = true;
       });
     });
-
-    _processingAnimationController.addListener(() {
-      if (!widget.loop && _processingAnimationController.value == 1) {
-        AdManager.instance
-            .showAds(AdType.interstitial, "quick_clean_finished_processing");
-      }
-    });
   }
 
   @override
@@ -111,11 +104,6 @@ class _QuickCleanProcessAndResultPageState
               ),
             ),
           ),
-          if (!_loopingAnimationFinished)
-            const Positioned(
-              bottom: 0,
-              child: BannerAd(),
-            ),
         ],
       ),
     );
