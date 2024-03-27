@@ -1,7 +1,5 @@
-import 'package:phone_cleaner/di/injector.dart';
 import 'package:phone_cleaner/main.dart';
 import 'package:phone_cleaner/router/app_observers.dart';
-import 'package:phone_cleaner/services/firebase_analytic/firebase_analytic_service.dart';
 import 'package:phone_cleaner/src/commons/pages/detail_page.dart';
 import 'package:phone_cleaner/src/commons/widgets/result_detail.dart';
 import 'package:phone_cleaner/src/features/file/features/filter/views/file_filter_page.dart';
@@ -54,7 +52,6 @@ class AppRouter {
   static GoRouter router = GoRouter(
     navigatorKey: navigatorKey,
     observers: [
-      injector.get<FirebaseAnalyticService>().getAnalyticsObserver(),
       AppObservers()
     ],
     routes: [

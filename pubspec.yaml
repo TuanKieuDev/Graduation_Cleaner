@@ -45,10 +45,10 @@ dependencies:
   notification_permissions: ^0.6.1
   syncfusion_flutter_charts: ^21.1.41
   
-  # firebase
-  firebase_analytics: ^10.2.0
-  firebase_core: ^2.9.0
-  firebase_crashlytics: ^3.1.0
+  # # firebase
+  # firebase_analytics: ^10.2.0
+  # firebase_core: ^2.9.0
+  # firebase_crashlytics: ^3.1.0
 
 dev_dependencies:
   flutter_test:
