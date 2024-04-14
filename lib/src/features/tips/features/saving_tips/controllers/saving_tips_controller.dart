@@ -10,26 +10,21 @@ class SavingTipsController extends _$SavingTipsController {
   @override
   FutureOr<SavingTipsState> build() {
     ref.watch(listAppControllerProvider);
-    final rarelyUsedApps =
-        ref.watch(rarelyUsedAppControllerProvider.notifier).future;
     final unusedApps = ref.watch(unusedAppsControllerProvider.notifier).future;
     final photosPreview =
         ref.watch(photoPreviewControllerProvider.notifier).future;
     final largeApps = ref.watch(largeAppsControllerProvider.notifier).future;
 
-    return Future.wait([rarelyUsedApps, unusedApps, photosPreview, largeApps])
+    return Future.wait([unusedApps, photosPreview, largeApps])
         .then((value) {
-      final rarelyUsedApp = value[0] as SavingTipsAppState;
-      final unusedApp = value[1] as SavingTipsAppState;
-      final photoPreview = value[2] as PhotoPreviewState;
-      final largeApp = value[3] as SavingTipsAppState;
+      final unusedApp = value[0] as SavingTipsAppState;
+      final photoPreview = value[1] as PhotoPreviewState;
+      final largeApp = value[2] as SavingTipsAppState;
 
       return SavingTipsState(
         isShowLargeAppsTips: largeApp.appCanOptimizeTotalSize > 0.kb,
         isShowPhotoTip: photoPreview.isShowPhotoPreview,
-        isShowRarelyUsedAppsTip: rarelyUsedApp.appCanOptimizeTotalSize > 0.kb,
         isShowUnUsedAppsTip: unusedApp.appCanOptimizeTotalSize > 0.kb,
-        // isShowUnnecessaryDataTip: false,
       );
     });
   }

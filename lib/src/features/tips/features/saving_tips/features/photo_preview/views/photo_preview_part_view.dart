@@ -3,7 +3,6 @@ import 'package:phone_cleaner/services/logger/logger.dart';
 import 'package:phone_cleaner/src/commons/commons.dart';
 import 'package:phone_cleaner/src/features/file/features/filter/views/file_filter_page.dart';
 import 'package:phone_cleaner/src/features/file/file.dart';
-import 'package:phone_cleaner/src/features/file/filter_params.dart';
 import 'package:phone_cleaner/src/features/tips/tips.dart';
 import 'package:phone_cleaner/src/themes/themes.dart';
 import 'package:flutter/material.dart';
@@ -78,7 +77,7 @@ class _PhotoPreviewViewState extends ConsumerState<PhotoPreviewPartView> {
       padding: const EdgeInsets.all(0),
       crossAxisCount: 2,
       crossAxisSpacing: 16,
-      childAspectRatio: 0.7,
+      childAspectRatio: 0.65,
       shrinkWrap: true,
       children: [
         if (photosPreviewInfo.isShowSimilarPhotos)

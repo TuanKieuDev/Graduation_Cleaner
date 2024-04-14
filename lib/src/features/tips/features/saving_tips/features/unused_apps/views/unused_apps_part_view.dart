@@ -65,7 +65,6 @@ class _UnusedAppsPartViewState extends ConsumerState<UnusedAppsPartView> {
       };
   @override
   Widget build(BuildContext context) {
-    ref.listen(appDiaryControllerProvider, logOnError());
 
     final appsData = ref.watch(unusedAppsControllerProvider);
 

@@ -387,31 +387,15 @@ class _AppDetail extends ConsumerWidget {
                           LayoutBuilder(builder: (context, constraints) {
                             return Padding(
                               padding: const EdgeInsets.symmetric(vertical: 12),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  PrimaryButton(
-                                    onPressed: () async {
-                                      DeviceApps.openApp(
-                                          appData[index].packageName);
-                                    },
-                                    title: const Text("Open app"),
-                                    borderRadius: BorderRadius.circular(16),
-                                    width: constraints.maxWidth / 2 - 8,
-                                    height: 40,
-                                  ),
-                                  PrimaryButton(
-                                    onPressed: () {
-                                      GoRouter.of(context)
-                                          .pushNamed(AppRouter.toBeUpdated);
-                                    },
-                                    title: const Text("Force stop"),
-                                    borderRadius: BorderRadius.circular(16),
-                                    width: constraints.maxWidth / 2 - 8,
-                                    height: 40,
-                                  ),
-                                ],
+                              child: PrimaryButton(
+                                onPressed: () async {
+                                  DeviceApps.openApp(
+                                      appData[index].packageName);
+                                },
+                                title: const Text("Open app"),
+                                borderRadius: BorderRadius.circular(16),
+                                width: constraints.maxWidth,
+                                height: 40,
                               ),
                             );
                           }),

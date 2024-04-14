@@ -104,8 +104,6 @@ class _DetailContent extends ConsumerWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // const UnnecessaryDataPartView(),
-                  // const SizedBox(height: 24),
                   Padding(
                     padding: const EdgeInsets.only(
                       left: 45,
@@ -147,10 +145,10 @@ class _DetailContent extends ConsumerWidget {
                       ],
                     ),
                   ),
-                  if (state.isShowRarelyUsedAppsTip) ...[
-                    const RarelyUsedAppsPartView(),
-                    const AppVerticalDivider(verticalPadding: 20),
-                  ],
+                  // if (state.isShowRarelyUsedAppsTip) ...[
+                  //   const RarelyUsedAppsPartView(),
+                  //   const AppVerticalDivider(verticalPadding: 20),
+                  // ],
                   if (state.isShowUnUsedAppsTip) ...[
                     const UnusedAppsPartView(),
                     const AppVerticalDivider(verticalPadding: 20),
@@ -165,8 +163,6 @@ class _DetailContent extends ConsumerWidget {
                     const LargeAppsPartView(),
                     const AppVerticalDivider(verticalPadding: 20),
                   ],
-
-                  // const AppDiaryPartView(),
                 ],
               ),
             ),
