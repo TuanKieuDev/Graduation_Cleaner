@@ -25,7 +25,7 @@ class Loading extends StatefulWidget {
 }
 
 class _LoadingState extends State<Loading>
-    with SingleTickerProviderStateMixin, InterOnDisposalMixin {
+    with SingleTickerProviderStateMixin {
   late final AnimationController _processingAnimationController =
       AnimationController(vsync: this);
 
@@ -149,12 +149,6 @@ class _LoadingState extends State<Loading>
               duration: fadeOutDuration,
               child: loadingIndicator,
             ),
-          ),
-          const Positioned(
-            left: 0,
-            right: 0,
-            bottom: 0,
-            child: BannerAd(),
           ),
         ],
       ),

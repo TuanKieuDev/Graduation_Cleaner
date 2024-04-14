@@ -1,17 +1,12 @@
 import 'dart:async';
-import 'dart:isolate';
 
 import 'package:phone_cleaner/di/app_modules.dart';
 import 'package:phone_cleaner/di/injector.dart';
-import 'package:phone_cleaner/gen/firebase_options.dart';
 import 'package:phone_cleaner/services/logger/logger.dart';
 import 'package:phone_cleaner/services/notifications/notification_services.dart';
 import 'package:phone_cleaner/services/work_manager/work_manager_services.dart';
 import 'package:phone_cleaner/src/commons/commons.dart';
 import 'package:device_info/device_info.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:flutter/foundation.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -32,29 +27,6 @@ void main() async {
     } on Exception catch (e, stacktrace) {
       appLogger.error('AdManager initialization error', e, stacktrace);
     }
-
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
-
-    FlutterError.onError = (errorDetails) {
-      // If you wish to record a "non-fatal" exception, please use `FirebaseCrashlytics.instance.recordFlutterError` instead
-      FirebaseCrashlytics.instance.recordFlutterError(errorDetails);
-    };
-
-    PlatformDispatcher.instance.onError = (error, stack) {
-      // If you wish to record a "non-fatal" exception, please remove the "fatal" parameter
-      FirebaseCrashlytics.instance.recordError(error, stack);
-      return true;
-    };
-
-    Isolate.current.addErrorListener(RawReceivePort((pair) async {
-      final List<dynamic> errorAndStacktrace = pair;
-      await FirebaseCrashlytics.instance.recordError(
-        errorAndStacktrace.first,
-        errorAndStacktrace.last,
-      );
-    }).sendPort);
 
     _initializeForApp();
 
@@ -78,7 +50,6 @@ void main() async {
     startApp();
   }, (Object error, StackTrace stackTrace) {
     appLogger.error('Out-Side Framework', error, stackTrace);
-    FirebaseCrashlytics.instance.recordError(error, stackTrace);
   });
 }
 

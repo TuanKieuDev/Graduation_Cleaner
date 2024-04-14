@@ -33,7 +33,7 @@ class LottieLooper extends StatefulWidget {
 }
 
 class _LottieLooperState extends State<LottieLooper>
-    with SingleTickerProviderStateMixin, InterOnDisposalMixin {
+    with SingleTickerProviderStateMixin {
   late final AnimationController _processingAnimationController =
       AnimationController(vsync: this);
 
@@ -156,12 +156,6 @@ class _LottieLooperState extends State<LottieLooper>
               duration: fadeOutDuration,
               child: loadingIndicator,
             ),
-          ),
-          const Positioned(
-            left: 0,
-            right: 0,
-            bottom: 0,
-            child: BannerAd(),
           ),
         ],
       ),

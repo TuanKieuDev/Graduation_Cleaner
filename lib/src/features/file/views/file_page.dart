@@ -144,22 +144,16 @@ class _MainContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+    return const Padding(
+      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 16),
       child: Column(
         children: [
-          const _HeaderContent(),
+          _HeaderContent(),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               PhotoAnalysis(padding: EdgeInsets.only(bottom: 12)),
               PhotoOptimizedPart(padding: EdgeInsets.symmetric(vertical: 12)),
-              Align(
-                alignment: Alignment.center,
-                child: NativeAd(
-                  padding: EdgeInsets.symmetric(vertical: 12),
-                ),
-              ),
               MediaFolderPart(padding: EdgeInsets.symmetric(vertical: 12)),
               LargeVideoPart(),
             ],

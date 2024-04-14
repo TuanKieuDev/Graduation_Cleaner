@@ -1,4 +1,3 @@
-import 'package:phone_cleaner/src/commons/commons.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -9,8 +8,7 @@ class ScanningAnimation extends StatefulWidget {
   State<ScanningAnimation> createState() => _ScanningAnimationState();
 }
 
-class _ScanningAnimationState extends State<ScanningAnimation>
-    with InterOnDisposalMixin {
+class _ScanningAnimationState extends State<ScanningAnimation> {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {

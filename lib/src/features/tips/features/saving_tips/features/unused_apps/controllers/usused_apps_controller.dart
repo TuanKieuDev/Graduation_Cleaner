@@ -1,3 +1,4 @@
+import 'package:phone_cleaner/src/commons/commons.dart';
 import 'package:phone_cleaner/src/features/features.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -12,7 +13,7 @@ class UnusedAppsController extends _$UnusedAppsController {
 
     return appUsage.then((value) {
       final apps = value;
-      final apps2 = apps[0].categories[2].items.toList();
+      final apps2 = apps[0].categories[2].items.where((e) => e.appType == AppType.installed).toList();
       return SavingTipsAppState(
         apps: apps2,
       );

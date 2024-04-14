@@ -51,24 +51,10 @@ class _HomePageState extends ConsumerState<HomePage>
 
     executedWorkTask();
 
-    var adLoadedSubscription = AdManager.instance.adLoaded.listen((adType) {
-      if (adType == AdType.appOpen && !_isAdOpenShowed) {
-        AdManager.instance.showAdOpen();
-      }
-    });
-
-    var adShownSubscription = AdManager.instance.adShowedStream.listen((event) {
-      if (event == AdType.appOpen) {
-        _isAdOpenShowed = true;
-      }
-    });
-
     Future.delayed(const Duration(seconds: 7), () async {
       setState(() {
         _isFirstLoading = false;
       });
-      adLoadedSubscription.cancel();
-      adShownSubscription.cancel();
       await Future.delayed(const Duration(milliseconds: 300));
       setState(() {
         _waitForAnimation = false;
@@ -125,8 +111,6 @@ class _HomePageState extends ConsumerState<HomePage>
       );
     }
     return Scaffold(
-      // drawer: const TabDrawer(),
-      // endDrawer: const SettingDrawer(),
       backgroundColor: cleanerColor.neutral3,
       body: LayoutBuilder(
         builder: (context, constraints) {
@@ -148,18 +132,13 @@ class _HomePageState extends ConsumerState<HomePage>
                           padding: EdgeInsets.only(
                             top: MediaQuery.of(context).viewPadding.top,
                           ),
-                          child: Column(
-                            children: const [
+                          child: const Column(
+                            children: [
                               _Header(),
                               Padding(
                                 padding: EdgeInsets.symmetric(
                                     horizontal: horizontalPadding),
                                 child: OverallSystemInformation(),
-                              ),
-                              Padding(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: horizontalPadding),
-                                child: NativeAd(),
                               ),
                             ],
                           ),

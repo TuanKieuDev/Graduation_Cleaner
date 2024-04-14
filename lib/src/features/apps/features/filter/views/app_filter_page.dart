@@ -73,16 +73,9 @@ class _ListAppPageState extends ConsumerState<AppFilterPage> {
     return Scaffold(
       backgroundColor: cleanerColor.neutral3,
       endDrawer: const AppFilterDrawer(),
-      body: Column(
-        children: const [
+      body: const Column(
+        children: [
           _Header(),
-          NativeAd(
-            size: NativeAdSize.small,
-            padding: EdgeInsets.symmetric(
-              vertical: 8,
-              horizontal: pageHorizontalPadding,
-            ),
-          ),
           _ItemNumber(),
           Expanded(child: _AppDisplayPart())
         ],
@@ -478,30 +471,6 @@ class _BottomBar extends ConsumerWidget {
             await ref
                 .read(appsControllerProvider.notifier)
                 .saveAppsToIgnoredApps(packageNameList);
-          },
-        ),
-        ActionButton(
-          icon: const Icon(
-            Icons.lock,
-            color: Color.fromRGBO(249, 168, 37, 1),
-          ),
-          title: 'Force stop',
-          titleStyle: semibold12.copyWith(
-              color: const Color.fromRGBO(177, 177, 177, 1)),
-          onPressed: () {
-            GoRouter.of(context).pushNamed(AppRouter.toBeUpdated);
-          },
-        ),
-        ActionButton(
-          icon: const Icon(
-            Icons.lock,
-            color: Color.fromRGBO(249, 168, 37, 1),
-          ),
-          title: 'Deep Clean',
-          titleStyle: semibold12.copyWith(
-              color: const Color.fromRGBO(177, 177, 177, 1)),
-          onPressed: () {
-            GoRouter.of(context).pushNamed(AppRouter.toBeUpdated);
           },
         ),
         ActionButton(

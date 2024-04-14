@@ -119,7 +119,7 @@ class PhotoAnalysis extends ConsumerWidget {
               padding: const EdgeInsets.all(0),
               crossAxisCount: 2,
               crossAxisSpacing: 16,
-              childAspectRatio: 0.7,
+              childAspectRatio: 0.65,
               shrinkWrap: true,
               children: [
                 _PhotosCategory(

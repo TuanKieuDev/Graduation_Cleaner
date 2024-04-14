@@ -457,17 +457,6 @@ class ItemList extends ConsumerWidget {
       return const SizedBox.shrink();
     }
 
-    Widget footer(int index) {
-      if (index == lowImportantListCount - 1) {
-        return const BannerAd();
-      }
-      if (index == lowImportantListCount + mediumImportantCount - 1) {
-        return const BannerAd();
-      }
-
-      return const SizedBox.shrink();
-    }
-
     return CustomScrollView(
       slivers: [
         for (int categoryIndex = 0; categoryIndex < totalCount; categoryIndex++)

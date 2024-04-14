@@ -323,12 +323,6 @@ class _Results extends StatelessWidget {
         //       ),
         //     ),
         //   ),
-        const SliverPadding(
-          padding: EdgeInsets.only(top: 16),
-          sliver: SliverToBoxAdapter(
-            child: NativeAd(),
-          ),
-        )
       ],
     );
   }

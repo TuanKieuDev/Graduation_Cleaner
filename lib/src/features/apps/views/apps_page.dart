@@ -159,13 +159,13 @@ class _DetailContent extends StatelessWidget {
         children: const [
           _MainContent(),
           AppsConsumption(),
-          Center(
-              child: NativeAd(
-            padding: EdgeInsets.only(
-              top: 24,
-              bottom: 12,
-            ),
-          )),
+          // Center(
+          //     child: NativeAd(
+          //   padding: EdgeInsets.only(
+          //     top: 24,
+          //     bottom: 12,
+          //   ),
+          // )),
           AppsUsage(padding: EdgeInsets.symmetric(vertical: 12.0)),
           BoostPerformance(padding: EdgeInsets.symmetric(vertical: 12.0)),
           AppsGrowing(padding: EdgeInsets.symmetric(vertical: 12.0)),

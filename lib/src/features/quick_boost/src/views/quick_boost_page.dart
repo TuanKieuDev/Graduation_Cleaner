@@ -140,21 +140,7 @@ class _QuickBoostState extends ConsumerState<QuickBoost>
               ),
               Positioned(
                 bottom: 32,
-                child: Column(
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: pageHorizontalPadding),
-                      child: NativeAd(
-                        size: NativeAdSize.small,
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 16,
-                    ),
-                    _BoostButton(onPressed: _boost),
-                  ],
-                ),
+                child: _BoostButton(onPressed: _boost),
               ),
               const SecondaryAppBar(
                 title: "Boost",

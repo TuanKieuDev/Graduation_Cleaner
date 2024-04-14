@@ -120,7 +120,6 @@ class _ContentState extends ConsumerState<_Content>
           PrimaryButton(
             onPressed: () async {
               if (isAllGranted) {
-                AdManager.instance.preventAdFor(newUserAdDelayDuration);
 
                 final goRouter = GoRouter.of(context);
                 goRouter.goNamed(AppRouter.home);
