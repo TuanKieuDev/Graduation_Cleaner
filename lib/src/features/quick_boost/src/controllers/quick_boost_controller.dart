@@ -28,7 +28,6 @@ class QuickBoostController extends _$QuickBoostController {
         savedSpace: value.ramOptimized.bytes,
       ),
     );
-    WorkTaskManager.registerPeriodicForJunkCleaningNotifications();
     debugPrint(
         "QuickBoostRam: ${value.beforeRam} | ${value.afterRam} | ${value.ramOptimized}");
     return value;

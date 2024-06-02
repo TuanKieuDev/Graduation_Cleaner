@@ -284,8 +284,8 @@ class _BoostButton extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return PrimaryButton(
       onPressed: onPressed,
-      title: Row(
-        children: const [
+      title: const Row(
+        children: [
           CleanerIcon(
             icon: CleanerIcons.btnBoost,
           ),
