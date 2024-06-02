@@ -3,21 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:workmanager/workmanager.dart';
 
 class WorkTaskManager {
-  static void registerPeriodicForJunkCleaningNotifications() {
-    Workmanager().registerPeriodicTask(
-      WorkTask.cleanJunk,
-      WorkTask.cleanJunk,
-      existingWorkPolicy: ExistingWorkPolicy.replace,
-      frequency: const Duration(hours: 1),
-    );
-    debugPrint('Register periodic for junk cleaning notifications');
-  }
-
-  static void unregisterPeriodicForJunkCleaningNotifications() {
-    Workmanager().cancelByUniqueName(WorkTask.cleanJunk);
-    debugPrint('Unregister periodic for junk cleaning notifications');
-  }
-
   static void registerPeriodicForLowStorageNotifications() {
     Workmanager().registerPeriodicTask(
       WorkTask.lowStorage,
