@@ -1,14 +1,9 @@
-import 'dart:ffi';
-import 'dart:io';
 import 'dart:math';
 
 import 'package:app_settings/app_settings.dart';
 import 'package:cleaner_app_info_example/models/app_growing.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:device_info/device_info.dart';
-import 'package:permission_handler/permission_handler.dart';
-import 'package:device_info/src/flutter_config/src/models/src/package_info/package_info.dart';
 
 class AppGrowingTest extends StatefulWidget {
   const AppGrowingTest({super.key});
